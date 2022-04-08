@@ -127,16 +127,9 @@ def usuarios():
 
 
 
-app.run(debug=True)
-if __name__ == '__main__':  # IF esse arquivo foi rodado direto,
-    # não foi chamado como biblioteca
-    #app.run(host='localhost', port=5002, debug=True)
+
+if __name__ == '__main__': 
     app.run(debug=True)
-    # suba um servidor, na porta 5002,
-    # configuração de debug
-    # debug: salvar dá reload
-
-
 # servidor do heroku
 # pip install gunicorn
 # gerar pip freeze > requirements.txt
